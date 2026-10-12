@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>tn.esprit.autoloc</groupId>
-    <artifactId>Autoloc-api</artifactId>
+    <artifactId>autoLoc-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Autoloc-api</name>
-    <description>Autoloc-api</description>
+    <name>autoLoc-api</name>
+    <description>autoLoc-api</description>
     <url/>
     <licenses>
         <license/>

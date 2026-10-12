@@ -5,25 +5,22 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
 import java.math.BigDecimal;
 import java.time.LocalDate;
-
 @Entity
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 public class Paiement {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idPaiement;
-
-    private BigDecimal montant;
-
-    private LocalDate datePaiement;
-
+    Long idPaiement;
+    BigDecimal montant;
+    LocalDate datePaiement;
     @Enumerated(EnumType.STRING)
-    private ModePaiement modePaiement;
+    ModePaiement modePaiement;
+
+    @ManyToOne
+    Contrat contrat;
 }
